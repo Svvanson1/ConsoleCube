@@ -36,8 +36,30 @@ public class Cube {
 	     }
 	}
 	
-	public static void updateLocation(int value) {
+	public static void updateLocation(int side) {
+		currentLocation = side - 1;
+		if (side > 6) {
+			System.out.println("Warning: an invalid integer has been inputted");
+		}
+	}
+	
+	public static void printCube(HashMap<Integer, String[][]> cube) { 
+		 System.out.println(Arrays.asList(cube));
+	}
+	
+	public static void shiftRow() {
+		//TODO
+	}
+	
+	public static void shiftCol() {
+		//TODO
+	}
+	
+	public static HashMap randomCube() {
+		//TODO
+	}
+	
+	public static boolean checkSolved() {
 		
 	}
-
 }
